@@ -33,3 +33,10 @@ bash deploy
 Then, navigate to `http://localhost:8000` from your host browser.
 
 > Make sure to have `/mnt/data` on your local machine. The db seeks that particular location to store and persist clients' data.
+
+## ☸️ Deploy on Kubernetes
+- Step1. git clone https://github.com/PrajwalBambulkar/Newsletter-.git
+- cd fullstack-k8s-webapp/deployment.
+- kubectl apply -f .
+- kubectl port-forward -n fullstack-app svc/frontend-service 8080:80 --address 0.0.0.0
+- ec2ip:8080
