@@ -36,7 +36,7 @@ Then, navigate to `http://localhost:8000` from your host browser.
 
 ## ☸️ Deploy on Kubernetes
 - Step1. git clone https://github.com/PrajwalBambulkar/Newsletter-.git
-- cd fullstack-k8s-webapp/deployment.
+- cd Newsletter/deployment.
 - kubectl apply -f .
 - kubectl port-forward -n fullstack-app svc/frontend-service 8080:80 --address 0.0.0.0
-- ec2ip:8080
+- access ec2ip:8080
